@@ -8,13 +8,24 @@
     <artifactId>digital-bank-acceptance-tests</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+
     <properties>
-        <maven.compiler.source>20</maven.compiler.source>
-        <maven.compiler.target>20</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
+
+
+    <!-- Dependencies are Maven vocabulary for libraries -->
+
     <dependencies>
+
+        <!-- Connect Java to Database -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.28</version>
+        </dependency>
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -59,10 +70,18 @@
         <!-- Selenium Java Library for UI automation below -->
 
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+
+<!--        <dependency>-->
+<!--            <groupId>org.seleniumhq.selenium</groupId>-->
+<!--            <artifactId>selenium-java</artifactId>-->
+<!--            <version>4.15.0</version>-->
+<!--        </dependency>-->
+
+        <!-- Mike's version below -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.15.0</version>
+            <version>3.141.59</version>
         </dependency>
 
 
@@ -81,14 +100,6 @@
             <version>1.0.2</version>
         </dependency>
 
-        <!-- Connect Java to Database -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.28</version>
-        </dependency>
-
     </dependencies>
-
 
 </project>

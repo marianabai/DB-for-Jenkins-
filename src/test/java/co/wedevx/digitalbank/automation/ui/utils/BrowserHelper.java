@@ -14,20 +14,19 @@ import java.time.Duration;
 //WebDriver Helper Extension is designed to simplify Java based Selenium/Webdriver tests
 //It's built on top of Selenium/WebDriver to make your tests more readable, reusable and maintainable
 //by providing easy handling towards browser and advance identifiers
-public class BrowserHelper {
-    //method -> wait until the element is visible
-    public static WebElement waitForVisibilityOfElement(WebDriver driver, WebElement element, Duration timeToWaitInSec) {
-        WebDriverWait wait = new WebDriverWait(driver, timeToWaitInSec);
-        return wait.until(ExpectedConditions.visibilityOf(element));
-    }
-
-    //method -> wait until the element is clickable and click on it
-    //we can use WebElement as a return type or void
-    public static WebElement waitUntilClickableAndClick (WebDriver driver, WebElement element, Duration timeToWaitInSec) {
-        WebDriverWait wait = new WebDriverWait(driver, timeToWaitInSec);
-        WebElement clickableElement = wait.until(ExpectedConditions.elementToBeClickable(element));
-        clickableElement.click();
-        return clickableElement;
-    }
-
-}
+//public class BrowserHelper {
+//    //method -> wait until the element is visible
+//    public static WebElement waitForVisibilityOfElement(WebDriver driver, WebElement element, Duration timeToWaitInSec) {
+//        WebDriverWait wait = new WebDriverWait(driver, timeToWaitInSec);
+//        return wait.until(ExpectedConditions.visibilityOf(element));
+//    }
+//
+//    //method -> wait until the element is clickable and click on it
+//    //we can use WebElement as a return type or void
+//    public static WebElement waitUntilClickableAndClick (WebDriver driver, WebElement element, Duration timeToWaitInSec) {
+//        WebDriverWait wait = new WebDriverWait(driver, timeToWaitInSec);
+//        WebElement clickableElement = wait.until(ExpectedConditions.elementToBeClickable(element));
+//        clickableElement.click();
+//        return clickableElement;
+//    }
+//}
