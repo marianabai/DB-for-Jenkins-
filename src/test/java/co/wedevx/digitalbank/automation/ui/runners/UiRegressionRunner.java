@@ -15,7 +15,9 @@ import static io.cucumber.junit.platform.engine.Constants.GLUE_PROPERTY_NAME;
 @ConfigurationParameter(key=GLUE_PROPERTY_NAME, value = "co.wedevx.digitalbank.automation.ui.steps")
 @IncludeTags("Test")
 @Cucumber
-@CucumberOptions(plugin = {"json:target/cucumber.json"})
+@CucumberOptions(features = "classpath:feature", tags = "@component-test",
+        glue = {"feature.component"},
+        plugin = {"json:${project.build.directory}/cucumber-reports/cucumber.json"})
 
 
 public class UiRegressionRunner {
