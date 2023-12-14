@@ -110,33 +110,34 @@
     </dependencies>
 
     <!-- Build configuration -->
-    <build>
-        <plugins>
-            <!-- Maven Cucumber Reporting plugin -->
-            <plugin>
-                <groupId>net.masterthought</groupId>
-                <artifactId>maven-cucumber-reporting</artifactId>
-                <version>${maven-cucumber-reporting.version}</version>
-                <executions>
-                    <execution>
-                        <id>generate-cucumber-reports</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                        <configuration>
-                            <jsonFiles>
-                                <!-- Adjust the path to match your project structure -->
-                                <param>${project.build.directory}/CucumberReports/reports/*.json</param>
-                            </jsonFiles>
-                            <outputDirectory>${project.build.directory}/cucumber-reports</outputDirectory>
-                            <inputDirectory>${project.build.directory}/CucumberReports</inputDirectory>
-                            <checkBuildResult>false</checkBuildResult>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            &lt;!&ndash; Maven Cucumber Reporting plugin &ndash;&gt;-->
+<!--            <plugin>-->
+<!--                <groupId>net.masterthought</groupId>-->
+<!--                <artifactId>maven-cucumber-reporting</artifactId>-->
+<!--                <version>${maven-cucumber-reporting.version}</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>generate-cucumber-reports</id>-->
+<!--                        <phase>test</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>generate</goal>-->
+<!--                        </goals>-->
+<!--                        <configuration>-->
+<!--                            <jsonFiles>-->
+<!--                                &lt;!&ndash; Adjust the path to match your project structure &ndash;&gt;-->
+<!--                                <param>${project.build.directory}/CucumberReports/report.json</param>-->
+<!--                            </jsonFiles>-->
+<!--                            <outputDirectory>${project.build.directory}/cucumber-reports</outputDirectory>-->
+<!--                            <inputDirectory>${project.build.directory}/CucumberReports</inputDirectory>-->
+<!--                            <checkBuildResult>false</checkBuildResult>-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
+
 
 </project>

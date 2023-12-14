@@ -27,7 +27,7 @@ public class Hooks {
     @Before("not @Registration")
     public void the_user_is_on_dbank_homepage() {
 
-        getDriver().get("http://marianabai.mydevx.com/bank/account/checking-add");
+        getDriver().get("http://marianab1244.mydevx.com/bank/account/checking-add");
     }
 
     @After ("not @NegativeRegistrationCases")

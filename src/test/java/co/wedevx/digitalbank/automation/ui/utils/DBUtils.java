@@ -18,9 +18,6 @@ public class DBUtils {
     public static void establishConnection() {
 
           // url, userName, password are in properties
-//        String url = "jdbc:mysql://3.249.240.23:3306/marianabai";
-//        String userName = "marianabai";
-//        String password = "ksyjfwrxbsbqrmyr";
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
