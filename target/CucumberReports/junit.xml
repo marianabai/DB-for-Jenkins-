@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="12.476" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Digital bank registration bank" name="Positive Case: As a user I create to create Digital BAnk account" time="12.404">
+<testsuite name="Cucumber" time="21.457" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Digital bank registration bank" name="Positive Case: As a user I create to create Digital BAnk account" time="21.383">
 <system-out><![CDATA[
 Given The user with "jack@test.co" is not in DB.............................passed
 And User navigates to Digital Bank signup page..............................passed
