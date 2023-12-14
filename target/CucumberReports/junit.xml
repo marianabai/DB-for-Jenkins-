@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="12.476" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Digital bank registration bank" name="Positive Case: As a user I create to create Digital BAnk account" time="12.404">
+<system-out><![CDATA[
+Given The user with "jack@test.co" is not in DB.............................passed
+And User navigates to Digital Bank signup page..............................passed
+When User creates account with following fields.............................passed
+Then User should be displayed with the message "Success Registration Successful. Please Login.".passed
+Then the following user info should be saved in the db......................passed
+]]></system-out>
+</testcase>
+</testsuite>
